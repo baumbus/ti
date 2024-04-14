@@ -1,0 +1,112 @@
+\documentclass[ngerman]{beamer}
+
+% https://ctan.org/pkg/fontenc
+\usepackage[T1]{fontenc}
+
+% https://www.ctan.org/pkg/lm
+\usepackage{lmodern}
+
+% https://www.ctan.org/pkg/inputenc
+\usepackage[utf8]{inputenc}
+
+% https://ctan.org/pkg/graphicx
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+% https://ctan.org/pkg/babel
+\usepackage{babel}
+
+% https://ctan.org/pkg/amsmath
+\usepackage{amsmath}
+
+% https://ctan.org/pkg/siunitx
+\usepackage{siunitx}
+\sisetup{locale=DE}
+
+% https://ctan.org/pkg/url
+\usepackage{url}
+
+% https://ctan.org/pkg/microtype
+\usepackage{microtype}
+
+% https://ctan.org/pkg/enumitem
+\usepackage[shortlabels]{enumitem}
+
+% https://ctan.org/pkg/float
+\usepackage{float}
+
+% https://ctan.org/pkg/multicol
+\usepackage{multicol}
+
+% https://ctan.org/pkg/blindtext
+\usepackage{blindtext}
+
+\usepackage{tikz}
+
+
+\title{Titel}
+\subtitle{Untertitel}
+\author{Autor}
+\institute[GGS]{Schule}
+\date{2024}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Inhaltsverzeichnis}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+    \frametitle{Übersicht}
+
+    \tableofcontents
+
+\end{frame}
+
+\section{Einleitung}
+
+\begin{frame}
+\frametitle{Überschrift}
+\blindtext
+
+\end{frame}
+
+\section{Hauptteil}
+
+\begin{frame}
+\frametitle{Überschrift}
+\blindtext
+
+\end{frame}
+
+\section{Schlussteil}
+
+\begin{frame}
+\frametitle{Überschrift}
+\blindtext
+
+\end{frame}
+
+\section{Literaturverzeichnis}
+
+\begin{frame}
+
+\title{Literaturverzeichnis}
+
+\begin{thebibliography}{2}
+    \bibitem{reference}
+    Reference
+    
+    \bibitem{guide}
+    Guide
+\end{thebibliography}
+
+\end{frame}
+
+\end{document}
