@@ -1,1 +1,1 @@
-# Beamer
+# TI-Nspire CAS
